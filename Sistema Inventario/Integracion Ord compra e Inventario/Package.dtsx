@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/20/2024 7:51:20 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{53F2CC68-B5A1-4B08-8334-9BE027EB3D84}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{DA6B6930-467A-4C67-BB51-59A3956D82A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -145,7 +145,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADnSq8O/YIVL1aLiCAgG3AGS1UEMMSQVoOrc5YwbNHvBwAAAAAOgAAAAAIAACAAAABgsPQcgdtRFeYprESHLDEKIWHrUem0o2eHVAxMeaz4UxAAAACQusMks9pvIW7K1HC5On7EQAAAANfsq4ARbFCAB79uWHs5ZCKthkJPBWZLRzfkdwR/CR4NuwW7PaMXKFdmRbrdnx7h4SxCffqteXyLrGe9Si0ISFg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA79+jLs5QJPmiCODDQpO0ak+8dQxNaasz9WMrXryj5awAAAAAOgAAAAAIAACAAAACLJxEM5VFeb8BSYP1Lg444HryNjWcBfmBomXTHZhee9xAAAABfHYLzTTuLvfnczYMErxfJQAAAAMarhsciK0cHbRr/X184Fe6h2fYTwUINE5z73ok+7MIaPtojdh/yStuL/Mo6KCMCTqYJA9bdcOmxE9NV/gzPQ/4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -160,7 +160,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAALkfN5WcWTrzh/k2XBQwPkPFYmBgq1agYuLHl+IDOLtAAAAAAOgAAAAAIAACAAAADxDXG4zKcqNNDA/Ptudd8UfAfiS9jkjJnusQjN+010zhAAAAAXb1Utzo+wSSis5ZpV1oukQAAAAGjOmLPK5sVcD3YpQC/pPnan+roT7fzaNW1o92l7j/Ao9lwrKi42UBXAvZhIxYq5MyaiAp8adfTW/vX9PRhm1r8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/Cut2ZeQeyhe+vptdFtLhh1ciTwIUTvc9kK0i1qSUvAAAAAAOgAAAAAIAACAAAABwxVchYxxIh7cRgHHNtwXYQuzV4yhdwqNTQ/5zN13XVBAAAADm6ipdLhvIvLLx97f6tuwGQAAAAKqlj6FaGVq9r+w9zdfhBL/+X2UGciC5VOyiBKeGw1GehqqRxOv1voO+0ww/BJKqW1qIfUbQnWz3ofHHhnauDIQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -298,6 +298,89 @@
               DTS:TextQualified="True"
               DTS:ObjectName=" Status"
               DTS:DTSID="{072DFCF5-7869-4B68-827D-191CAC522EBE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OrdenComprFinal]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7D585A38-012D-416A-BEC8-E96FDF783448}"
+      DTS:ObjectName="OrdenComprFinal">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\LEO10\Documents\UDLA\Integracion de Sistemas\Examen 2\ordenCompra.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="idCliente"
+              DTS:DTSID="{FC4CCB91-016D-476A-A8AB-4300EBD48B1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="numOrden"
+              DTS:DTSID="{F678FC78-ECD8-4FD1-A4D5-1FF80A81A961}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="idProducto"
+              DTS:DTSID="{EF6DEC3E-5085-41B4-AE96-23321458592B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="imagen"
+              DTS:DTSID="{DD9AB9F6-F816-4230-9408-306D6CB65EEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{8AB43796-86F5-41F1-98E1-F184B7F3A230}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="estado"
+              DTS:DTSID="{24BCA1C4-7F11-4D43-96BA-F6F42F643FCC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cantidad"
+              DTS:DTSID="{B36CC621-A363-4D09-9203-E6DE9CE43192}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -634,7 +717,7 @@
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[numOrden]"
                       dataType="wstr"
-                      length="4"
+                      length="50"
                       name="numOrden" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[idProducto]"
@@ -709,8 +792,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ordcpPR]"
-                  connectionManagerRefId="Package.ConnectionManagers[ordcpPR]"
+                  connectionManagerID="Package.ConnectionManagers[OrdenComprFinal]"
+                  connectionManagerRefId="Package.ConnectionManagers[OrdenComprFinal]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -723,12 +806,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[idCliente]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[idCliente]"
                       name="idCliente"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -745,12 +828,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[numOrden]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[numOrden]"
                       name="numOrden"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -767,12 +850,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[idProducto]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[idProducto]"
                       name="idProducto"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -789,12 +872,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[imagen]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[imagen]"
                       name="imagen"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -811,12 +894,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[nombre]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[nombre]"
                       name="nombre"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -833,12 +916,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[estado]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[estado]"
                       name="estado"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -855,12 +938,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].ExternalColumns[cantidad]"
                       length="50"
                       lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[cantidad]"
                       name="cantidad"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -985,27 +1068,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos\Origen ORDEN COMPRA"
-          TopLeft="334.487166195854,58.733333800104" />
-        <NodeLayout
           Size="179.2,41.6"
           Id="Package\Tarea Flujo de datos\Destino BD Inventario"
-          TopLeft="339.038448066284,275.400002188683" />
+          TopLeft="430.705111090445,273.666668841574" />
+        <NodeLayout
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos\Origen ORDEN COMPRA"
+          TopLeft="420.320496118477,58.733333800104" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
-          TopLeft="431.162807131069,100.333333800104">
+          TopLeft="519.912803604461,100.333333800104">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,175.066668388579"
+              EndConnector="0,173.33333504147"
               Start="0,0"
-              End="0,167.566668388579">
+              End="0,165.83333504147">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,167.566668388579" />
+                    End="0,165.83333504147" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

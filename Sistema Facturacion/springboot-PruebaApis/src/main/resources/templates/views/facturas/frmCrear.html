@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="plantilla/Template :: head">
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crear Factura</title>
+</head>
+<body>
+	<header th:replace="plantilla/Template::header"></header>
+	
+	<div class="container">
+		<div class="card bg-light">
+			<div class="card-header bg-dark text-white" th:text="${titulo}"></div>
+				<div class="card-body">
+			
+					<form th:action="@{/views/facturas/save}" th:object="${factura}" method="post">
+										  					  
+					  <div class="form-group-row">
+						
+						<label for="numOrden" class="col-md-2 form-label">Numero de Orden:</label>
+						<input type="text" th:field="*{num_Orden}" class="form-control form-control-sm col-md-6"
+							id="numOrden" placeholder="Número de Orden"> 
+					  </div>
+					  
+					  <div class="form-group-row">
+						
+						<label for="fecha_Factura" class="col-md-2 form-label">Fecha de factura:</label>
+						<input type="text" th:field="*{fecha_Factura}" class="form-control form-control-sm col-md-6"
+							id="fecha_Factura" placeholder="Fecha de factura"> 
+					  </div>
+					  
+					  <div class="form-group-row">
+						
+						<label for="total_Factura" class="col-md-2 form-label">Total factura:</label>
+						<input type="text" th:field="*{total_Factura}" class="form-control form-control-sm col-md-6"
+							id="total_Factura" placeholder="Total factura"> 
+					  </div>
+					  
+					  
+					  	<div class="card-footer bg-dark">
+							<input type="submit" class="btn btn-primary btn-sm"	value="Guardar" />
+						</div>
+					
+					</form>
+				</div>
+		</div>			
+	</div>
+	
+</body>
+</html>

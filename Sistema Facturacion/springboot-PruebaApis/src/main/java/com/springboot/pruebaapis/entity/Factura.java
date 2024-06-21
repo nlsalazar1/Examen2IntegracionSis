@@ -20,50 +20,55 @@ public class Factura implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFactura;
 
-    private String numOrden;
-    private Date fechaFactura;
-    private BigDecimal totalFactura;
+    private String num_Orden;
+    private String fecha_Factura;
+    private BigDecimal total_Factura;
 
     // Constructor por defecto
     public Factura() {
     }
 
-    // Getters y Setters
-    public int getIdFactura() {
-        return idFactura;
-    }
+	public int getIdFactura() {
+		return idFactura;
+	}
 
-    public void setIdFactura(int idFactura) {
-        this.idFactura = idFactura;
-    }
+	public void setIdFactura(int idFactura) {
+		this.idFactura = idFactura;
+	}
 
-    public String getNumOrden() {
-        return numOrden;
-    }
+	public String getNum_Orden() {
+		return num_Orden;
+	}
 
-    public void setNumOrden(String numOrden) {
-        this.numOrden = numOrden;
-    }
+	public void setNum_Orden(String num_Orden) {
+		this.num_Orden = num_Orden;
+	}
 
-    public Date getFechaFactura() {
-        return fechaFactura;
-    }
+	public String getFecha_Factura() {
+		return fecha_Factura;
+	}
 
-    public void setFechaFactura(Date fechaFactura) {
-        this.fechaFactura = fechaFactura;
-    }
+	public void setFecha_Factura(String fecha_Factura) {
+		this.fecha_Factura = fecha_Factura;
+	}
 
-    public BigDecimal getTotalFactura() {
-        return totalFactura;
-    }
+	public BigDecimal getTotal_Factura() {
+		return total_Factura;
+	}
 
-    public void setTotalFactura(BigDecimal totalFactura) {
-        this.totalFactura = totalFactura;
-    }
+	public void setTotal_Factura(BigDecimal total_Factura) {
+		this.total_Factura = total_Factura;
+	}
 
-    @Override
-    public String toString() {
-        return "Factura [idFactura=" + idFactura + ", numOrden=" + numOrden + ", fechaFactura=" + fechaFactura
-                + ", totalFactura=" + totalFactura + "]";
-    }
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	@Override
+	public String toString() {
+		return "Factura [idFactura=" + idFactura + ", num_Orden=" + num_Orden + ", fecha_Factura=" + fecha_Factura
+				+ ", total_Factura=" + total_Factura + "]";
+	}
+
+    
 }

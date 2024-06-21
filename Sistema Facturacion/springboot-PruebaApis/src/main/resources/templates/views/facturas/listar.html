@@ -15,6 +15,10 @@
 	
 	<div class="container">
 	
+		<a class="btn btn-primary btn-sm" th:href="@{/views/facturas/create}"
+			th:text="'Nueva Factura'" title="Crear Nueva factura">
+		</a>
+		
 		<table class="table">
 		  <thead>
 		    <tr>
@@ -27,9 +31,9 @@
 		  <tbody>
 		    <tr th:each="fc:${facturas}">
 		      <th scope="row" th:text="${fc.idFactura}"></th>
-		      <td th:text="${fc.numOrden}"></td>
-		      <td th:text="${fc.fechaFactura}"></td>
-		      <td th:text="${fc.totalFactura}"></td>
+		      <td th:text="${fc.num_Orden}"></td>
+		      <td th:text="${fc.fecha_Factura}"></td>
+		      <td th:text="${fc.total_Factura}"></td>
 		    </tr>		    	    
 		 
 		  </tbody>

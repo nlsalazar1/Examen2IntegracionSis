@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="plantilla/Template :: head">
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+	<header th:replace="plantilla/Template::header"></header>
+	
+	<div class="container">
+		<h1 th:text="${titulo}"></h1>		
+	</div>
+	
+	<div class="container">
+	
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col">idFactura</th>
+		      <th scope="col">numOrden</th>
+		      <th scope="col">fechaFactura</th>
+		      <th scope="col">totalFactura</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr th:each="fc:${facturas}">
+		      <th scope="row" th:text="${fc.idFactura}"></th>
+		      <td th:text="${fc.numOrden}"></td>
+		      <td th:text="${fc.fechaFactura}"></td>
+		      <td th:text="${fc.totalFactura}"></td>
+		    </tr>		    	    
+		 
+		  </tbody>
+		</table>
+	</div>
+</body>
+</html>

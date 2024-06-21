@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{53F2CC68-B5A1-4B08-8334-9BE027EB3D84}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{DBD892E8-DC4C-427F-8893-E409863DCD84}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -145,7 +145,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAL8LiPHQKNLS//yyzjaIjg8dlQzSLleajGvibr6k7yiQAAAAAOgAAAAAIAACAAAAAuut4cGN6bQ9I3/AUTwJ/2TfA0kRVlzotpyIT7pTht0RAAAACFGmVePp4kdXh1NLeIQ5LHQAAAAO+mvqRaCVQXD2xDFdeuGhZJXxXAOSxCmJpiY/eAGOOnOLeoKMr6KMdOEWzMlFqokqRMW+htKOunRnr/thL9I0E</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHFiuVLoe1YBrYgHAkAvviwY5eL83EurHvD4UlbOA6wAAAAAAOgAAAAAIAACAAAABI7OwsTWTzhP5Bt5dcV6vdJuZUyFLwIRe67l3ChHyZjRAAAAD4i0Yekem80BZsrfh88pRoQAAAAM6hnnjx13A7G/ImYFZ+GZvXaQJaNj7oNRmwYRldz1x5YVsj9OE8shv5BGKabAZt+a36RnVpuNTPzzwPSXZyMzk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -160,7 +160,7 @@
           <DTS:Password
             DTS:Name="pwd"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAcjKwqBMYCeLCm3uTHPZEvzLjBWo6FQjHgnRfWY4UGugAAAAAOgAAAAAIAACAAAADJf5exfsQyKVEyLxfEVvpKQSzSP8OppDWYoe543pakaxAAAADki4T1o5wCLQJEefFbealJQAAAABd1ATwHFzR2D5HKv6+NjOiKrvkhBxWCETF2zdzWR0m36+9Qdu873Tf78cw3TRxgVfMDwoJ7EKpVJ9/0l581d9M</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu1uLB+I3n0C8OoiFJdyCigAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABOAe4/WbeBhUmyZQIB3tNsSAd1txFKHO/vjBS5uXImVAAAAAAOgAAAAAIAACAAAABmiJZdEhJf4IAe+BXUqQcd3ecRaQajtxGb9I8EMDTxzRAAAABJSl0i25sDkImuuRBfS6gPQAAAANSTa5Pb/KlztoQtRsbtboM+50/mXPEvaIF9viUT2rgymzm1lyP4DOD6Ig4EXOqkJtHTcwGCzvpHwc3vFD2a6YU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -563,64 +563,6 @@
                   errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[idCliente]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="idCliente"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[idCliente]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[idCliente]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[numOrden]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="numOrden"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[numOrden]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[numOrden]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[idProducto]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="idProducto"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[idProducto]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[idProducto]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[imagen]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="imagen"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[imagen]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[imagen]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="nombre"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[nombre]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[estado]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="estado"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[estado]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[estado]" />
-                    <inputColumn
-                      refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].Columns[cantidad]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="cantidad"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[cantidad]"
-                      lineageId="Package\Tarea Flujo de datos\Origen ORDEN COMPRA.Outputs[Salida de origen de archivo plano].Columns[cantidad]" />
-                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
@@ -634,7 +576,7 @@
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[numOrden]"
                       dataType="wstr"
-                      length="4"
+                      length="50"
                       name="numOrden" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Destino BD Inventario.Inputs[Entrada de destino de ADO NET].ExternalColumns[idProducto]"

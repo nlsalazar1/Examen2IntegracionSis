@@ -1,0 +1,4 @@
+idCliente	numOrden	idProducto	imagen	nombre	estado	cantidad
+1	A001	1	https://rickandmortyapi.com/api/character/avatar/1.jpeg	Rick Sanchez	Alive	1
+1	A001	3	https://rickandmortyapi.com/api/character/avatar/3.jpeg	Summer Smith	Alive	5
+1	A001	4	https://rickandmortyapi.com/api/character/avatar/4.jpeg	Beth Smith	Alive	2
